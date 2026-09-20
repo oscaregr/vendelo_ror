@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+refrijerador:
+  title: Refrijerador
+  description: En buen estado
+  price: 134
+
+reloj:
+  title: Reloj
+  description: no se mueve
+  price: 13
