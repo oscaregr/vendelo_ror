@@ -66,4 +66,13 @@ class ProductControllerTest < ActionDispatch::IntegrationTest
         assert_redirected_to products_path
         assert_equal flash[:notice], "tu producto se ha actualizado"
     end
+
+    test "eliminar producto" do
+        assert_difference("Product.count", -1) do
+            delete product_path(products(:reloj))
+        end
+
+        assert_redirected_to products_path
+        assert_equal flash[:notice], "producto eliminado correctamente correctamente"
+    end
 end
