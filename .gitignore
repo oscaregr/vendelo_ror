@@ -6,7 +6,6 @@
 
 # Ignore bundler config.
 /.bundle
-# ignore database config
 config/database.yml
 
 # Ignore all environment files.
@@ -30,13 +29,10 @@ config/database.yml
 !/tmp/storage/
 !/tmp/storage/.keep
 
-vendor/
-
 /public/assets
 
 # Ignore key files for decrypting credentials and more.
 /config/*.key
-/config/initializers/*
 
-.git-credentials
-/.kamal
+/.git-credentials
+/.github
