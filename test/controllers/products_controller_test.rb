@@ -55,4 +55,15 @@ class ProductControllerTest < ActionDispatch::IntegrationTest
         assert_response :success
         assert_select "form"
     end
+
+    test "permite actualizar un producto" do
+        patch product_path(products(:reloj)), params: {
+            product: {
+                description: "no se mueve"
+            }
+        }
+
+        assert_redirected_to products_path
+        assert_equal flash[:notice], "tu producto se ha actualizado"
+    end
 end
