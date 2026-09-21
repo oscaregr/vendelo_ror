@@ -8,6 +8,8 @@
 /.bundle
 
 #ignore database credentials
+
+#ignore database credentials
 config/database.yml
 config/*.yml
 
