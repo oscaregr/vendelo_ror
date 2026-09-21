@@ -1,0 +1,14 @@
+Puts the next variables on the server variables before to deploy it.
+
+RAILS_MAX_THREADS=3
+PORT=3000
+DATABASE_URL= get from railway, something like 'postgresql://postgres...' .
+LANG=es_US.UTF-8
+RACK_ENV=production
+RAILS_ENV=production
+RAILS_MASTER_KEY=your prject master key
+PGDATABASE=get database_name from railwayy
+PGHOST=get host from railway
+PGPASSWORD=get passwword from railway
+PGPORT=get port from railway
+PGUSER=get user_name from railway
