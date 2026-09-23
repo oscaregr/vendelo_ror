@@ -11,5 +11,6 @@
 <%= link_to 'editar producto', edit_product_path(@product) %>
 
 <%= link_to 'eliminar producto', product_path(@product), data: {
-    turbo_method: :delete
+    turbo_method: :delete,
+    turbo_confirm: t('common.confirm')
 } %>
