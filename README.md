@@ -10,6 +10,12 @@ Things you may want to cover:
 * System dependencies
 
 * Configuration
+rails db:create
+rails db:migrate
+
+#crear coneccion de storage for files
+rails active_storage:install
+rals db:migrate
 
 * Database creation
 
