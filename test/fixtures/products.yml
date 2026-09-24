@@ -4,8 +4,16 @@ refrijerador:
   title: Refrijerador
   description: En buen estado
   price: 134
+  category: videogames
 
 reloj:
   title: Reloj
   description: no se mueve
   price: 13
+  category: videogames
+
+air:
+  title: Reloj
+  description: no se mueve
+  price: 13
+  category: computers
