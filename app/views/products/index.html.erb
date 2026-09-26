@@ -1,5 +1,13 @@
-<h1> productos </h1>
+<%= turbo_frame_tag 'categories' do %>
 
-<%= Date.today %>
+    <h1> productos </h1>
 
-<%= render partial: 'product', collection: @products %>
+    <%= link_to 'todos', products_path %>
+
+    <%= Date.today %>
+
+    <%= render partial: 'category', collection: @categories %>
+
+    <%= render partial: 'product', collection: @products %>
+
+<% end %>
