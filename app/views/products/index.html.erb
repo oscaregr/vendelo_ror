@@ -2,6 +2,16 @@
 
     <h1> productos </h1>
 
+    <%= form_with url: products_path, method: :get do |form| %>
+
+        <%= form.number_field :min_price, placeholder: 'precio minimo', 
+            onChange: 'this.form.requestSubmit()', value: params[:min_price] %>
+
+        <%= form.number_field :max_price, placeholder: 'precio maximo', 
+            onChange: 'this.form.requestSubmit()', value: params[:max_price] %>
+
+    <% end %>
+
     <%= link_to 'todos', products_path %>
 
     <%= Date.today %>
