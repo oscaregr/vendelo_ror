@@ -3,6 +3,7 @@
     <h1> productos </h1>
 
     <%= form_with url: products_path, method: :get do |form| %>
+        <%= form.text_field :query_text, placeholder: 'Buscar', onChange: 'this.form.requestSubmit()', value: params[:query_text] %>
 
         <%= form.number_field :min_price, placeholder: 'precio minimo', 
             onChange: 'this.form.requestSubmit()', value: params[:min_price] %>

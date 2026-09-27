@@ -24,6 +24,14 @@ class ProductControllerTest < ActionDispatch::IntegrationTest
         assert_select "h1", "Refrijerador"
     end
 
+     test "buscar producto por query_text" do
+        get products_path(query_text: "Refrijerador")
+
+        assert_response :success
+        assert_select ".product", 1
+        assert_select "h1", "Refrijerador"
+    end
+
     test "renderisar pagina de producto" do
         get product_path(products(:reloj))
 
