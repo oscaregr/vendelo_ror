@@ -28,8 +28,24 @@ class ProductControllerTest < ActionDispatch::IntegrationTest
         get products_path(query_text: "Refrijerador")
 
         assert_response :success
-        assert_select ".product", 1
-        assert_select "h1", "Refrijerador"
+        assert_select ".product", 2
+        assert_select "h1", "Reloj"
+    end
+
+    test "filtrar productos por precio mas caro" do
+        get products_path(order_by: "expensive")
+
+        assert_response :success
+        assert_select ".product", 3
+        assert_select ".products .product:first-child h1", "Refrijerador"
+    end
+
+    test "filtrar productos por precio mas varato" do
+        get products_path(order_by: "cheaper")
+
+        assert_response :success
+        assert_select ".product", 3
+        assert_select ".products .product:first-child h1", "RelojDigital"
     end
 
     test "renderisar pagina de producto" do
