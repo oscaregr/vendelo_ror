@@ -5,7 +5,7 @@ class ProductControllerTest < ActionDispatch::IntegrationTest
         get products_path
 
         assert_response :success
-        assert_select ".product", 1
+        assert_select ".product", 3
     end
 
     test "renderisar todo los productos filtrado por categoria" do
@@ -13,15 +13,15 @@ class ProductControllerTest < ActionDispatch::IntegrationTest
 
         assert_response :success
         assert_select ".product", 1
-        assert_select "h1", "Refrijerador"
+        assert_select "h1", "Reloj"
     end
 
     test "renderisar todo los productos filtrado por precio_minimo y precio_maximo" do
         get products_path(min_price: 100, max_price: 150)
 
         assert_response :success
-        assert_select ".product", 3
-        assert_select ".category", 3
+        assert_select ".product", 1
+        assert_select "h1", "Refrijerador"
     end
 
     test "renderisar pagina de producto" do
@@ -45,7 +45,8 @@ class ProductControllerTest < ActionDispatch::IntegrationTest
             product: {
                 title: "microhondas",
                 description: "no enciende",
-                price: 34
+                price: 34,
+                category_id: categories(:videogames).id
             }
         }
 
