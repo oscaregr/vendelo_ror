@@ -3,17 +3,145 @@
 refrijerador:
   title: Refrijerador
   description: En buen estado
-  price: 134
-  category: videogames
+  price: 800
+  category: electisity
 
 reloj:
   title: Reloj
   description: no se mueve
-  price: 13
+  price: 250
   category: videogames
 
 air:
   title: RelojDigital
   description: no se mueve
-  price: 10
+  price: 120
   category: computers
+
+camisa:
+  title: payera
+  description: no manchada
+  price: 60
+  category: clothes
+
+libro:
+  title: genesis
+  description: libro en exelente condicion
+  price: 250
+  category: books
+
+perfume:
+  title: go
+  description: media botella
+  price: 350
+  category: beauty
+
+pantalla:
+  title: televisor
+  description: En buen estado
+  price: 450
+  category: electisity
+
+nintendo:
+  title: nintendoSwitch
+  description: no sirve el enchufe
+  price: 1500
+  category: videogames
+
+mac:
+  title: macbuPro
+  description: trabada
+  price: 950
+  category: computers
+
+falda:
+  title: falda
+  description: despintada
+  price: 30
+  category: clothes
+
+harry:
+  title: harry poter
+  description: libro en exelente condicion
+  price: 1200
+  category: books
+
+stefano:
+  title: stefano
+  description: media botella
+  price: 350
+  category: beauty
+
+
+
+microndas:
+  title: microndas
+  description: no calienta
+  price: 600
+  category: electisity
+
+xbos:
+  title: xbos X
+  description: no da imajen
+  price: 700
+  category: videogames
+
+monitor:
+  title: pantalla diagonal
+  description: extrelllada
+  price: 350
+  category: computers
+
+vestido:
+  title: vestido
+  description: manchado
+  price: 140
+  category: clothes
+
+bleach:
+  title: bleach
+  description: libro en exelente condicion
+  price: 450
+  category: books
+
+desodorante:
+  title: old spaices
+  description: media botella
+  price: 25
+  category: beauty
+
+horno:
+  title: horno
+  description: funcionando
+  price: 550
+  category: electisity
+
+minecraft:
+  title: minecraft
+  description: cuenta funcinal
+  price: 750
+  category: videogames
+
+lenovo:
+  title: bocina
+  description: dura poco la vateria
+  price: 950
+  category: computers
+
+chamarra:
+  title: chamarra
+  description: sin sierre
+  price: 30
+  category: clothes
+
+avatar:
+  title: avatar
+  description: libro en exelente condicion
+  price: 1000
+  category: books
+
+matusalen:
+  title: matusalen
+  description: media botella
+  price: 850
+  category: beauty

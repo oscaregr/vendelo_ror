@@ -8,3 +8,12 @@ computers:
 
 clothes:
   name: Ropa
+
+books:
+  name: libros
+
+beauty:
+  name: belleza
+
+electisity:
+  name: electrodomesticos

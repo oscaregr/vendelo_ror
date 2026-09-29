@@ -1,4 +1,4 @@
-<%= turbo_frame_tag 'categories' do %>
+<%= turbo_frame_tag 'home' do %>
 
     <h1> productos </h1>
 
@@ -22,5 +22,6 @@
 
     <div class="products">
         <%= render partial: 'product', collection: @products %>
+        <%== pagy_nav(@pagy) if @pagy.pages > 1 %>
     </div>
 <% end %>

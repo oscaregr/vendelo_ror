@@ -5,14 +5,14 @@ class ProductControllerTest < ActionDispatch::IntegrationTest
         get products_path
 
         assert_response :success
-        assert_select ".product", 3
+        assert_select ".product", 10
     end
 
     test "renderisar todo los productos filtrado por categoria" do
         get products_path(category_id: categories(:computers).id)
 
         assert_response :success
-        assert_select ".product", 1
+        assert_select ".product", 4
         assert_select "h1", "Reloj"
     end
 
@@ -20,7 +20,7 @@ class ProductControllerTest < ActionDispatch::IntegrationTest
         get products_path(min_price: 100, max_price: 150)
 
         assert_response :success
-        assert_select ".product", 1
+        assert_select ".product", 2
         assert_select "h1", "Refrijerador"
     end
 
@@ -28,7 +28,7 @@ class ProductControllerTest < ActionDispatch::IntegrationTest
         get products_path(query_text: "Refrijerador")
 
         assert_response :success
-        assert_select ".product", 2
+        assert_select ".product", 1
         assert_select "h1", "Reloj"
     end
 
@@ -36,16 +36,16 @@ class ProductControllerTest < ActionDispatch::IntegrationTest
         get products_path(order_by: "expensive")
 
         assert_response :success
-        assert_select ".product", 3
-        assert_select ".products .product:first-child h1", "Refrijerador"
+        assert_select ".product", 10
+        assert_select ".products .product:first-child h1", "nintendoSwitch"
     end
 
     test "filtrar productos por precio mas varato" do
         get products_path(order_by: "cheaper")
 
         assert_response :success
-        assert_select ".product", 3
-        assert_select ".products .product:first-child h1", "RelojDigital"
+        assert_select ".product", 10
+        assert_select ".products .product:first-child h1", "old spaices"
     end
 
     test "renderisar pagina de producto" do
@@ -54,7 +54,7 @@ class ProductControllerTest < ActionDispatch::IntegrationTest
         assert_response :success
         assert_select ".title", "Reloj"
         assert_select ".description", "no se mueve"
-        assert_select ".price", "13"
+        assert_select ".price", "250"
     end
 
     test "renderisa a nuevo producto" do
