@@ -23,7 +23,7 @@ gem "jbuilder"
 gem "json", "~> 2.21"
 # gem pagy para paginacion.
 gem "pagy", "~> 9.3"
-# arregla conflicto de gem file pagy, es para comanos cortos
+# arregla conflicto de gem file pagy, es para comandos cortos
 # gem "abbrev"
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
