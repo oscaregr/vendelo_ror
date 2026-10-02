@@ -23,11 +23,11 @@ gem "jbuilder"
 gem "json", "~> 2.21"
 # gem pagy para paginacion.
 gem "pagy", "~> 9.3"
-# arregla conflicto de gem file pagy, es para comandos cortos
-# gem "abbrev"
+ # arregla conflicto de gem file pagy, es para comandos cortos
+ # gem "abbrev"
 
-# Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
-# gem "bcrypt", "~> 3.1.7"
+ # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
+ gem "bcrypt", "~> 3.1.7"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ windows jruby ]
